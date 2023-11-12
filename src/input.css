@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+    background-color: white;
+}
+  
+.nav-link.clicked {
+    background-color: black;
+    color: white;
+}

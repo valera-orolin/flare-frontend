@@ -10,3 +10,11 @@
     background-color: black;
     color: white;
 }
+
+.feeds-choice {
+    color: rgb(100 116 139);
+}
+
+.feeds-choice.clicked {
+    color: black;
+}

@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-link {
-    background-color: white;
-}
-  
 .nav-link.clicked {
-    background-color: black;
-    color: white;
+    font-weight: bold;
+    font-size: large;
 }
 
 .feeds-choice {

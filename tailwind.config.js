@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+        position: {
+            sticky: 'sticky',
+        },
+        top: {
+            '0': '0',
+        }
+    },
   },
   plugins: [],
 }

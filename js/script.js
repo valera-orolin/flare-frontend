@@ -50,3 +50,19 @@ document.getElementById('emoji-icon').addEventListener('click', function() {
     const emojiPicker = document.getElementById('emoji-picker');
     emojiPicker.classList.toggle('hidden');
 });
+
+const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+btn.addEventListener('click', () => {
+  btn.classList.toggle('open')
+  nav.classList.toggle('flex')
+  nav.classList.toggle('hidden')
+})
+
+const btnsMore = document.querySelectorAll('.more-btn')
+const mores = document.querySelectorAll('.more')
+btnsMore.forEach((btnMore, index) => {
+  btnMore.addEventListener('click', () => {
+    mores[index].classList.toggle('hidden')
+  })
+})

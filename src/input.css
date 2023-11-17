@@ -7,6 +7,10 @@
     font-size: large;
 }
 
+.nav-link {
+    @apply flex items-center space-x-2 rounded-full py-3 px-5 transition-all w-full duration-200 hover:bg-black hover:text-white;
+}
+
 .feeds-choice {
     color: rgb(100 116 139);
 }

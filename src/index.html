@@ -15,8 +15,8 @@
     <div class="container mx-auto px-4">
 
         <!-- Menu section -->
-        <div class="grid lg:grid-cols-4 gap-10">
-            <div class="lg:col-span-1 font-medium hidden lg:block">
+        <div class="grid gap-10 lg:grid-cols-4">
+            <div class="font-medium hidden lg:col-span-1 lg:block">
                 <div class="sticky top-0 pt-8">
                     <!--
                     <div class="flex justify-center items-center h-auto w-full">
@@ -29,7 +29,7 @@
                     -->
                     <div class="flex flex-col items-start">
                         <a href="#" class="text-3xl font-bold px-5 mb-4">Flare</a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-user"></i>
                             </div>
@@ -37,7 +37,7 @@
                                 Profile
                             </div>
                         </a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-newspaper"></i>
                             </div>
@@ -45,7 +45,7 @@
                                 Feeds
                             </div>
                         </a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -53,7 +53,7 @@
                                 Messages
                             </div>
                         </a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-users"></i>
                             </div>
@@ -61,7 +61,7 @@
                                 Friends
                             </div>
                         </a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-bell"></i>
                             </div>
@@ -69,7 +69,7 @@
                                 Notifications
                             </div>
                         </a>
-                        <a href="#" class="nav-link flex items-center space-x-2 rounded-full py-3 px-5 lg:hover:bg-black lg:hover:text-white transition-all duration-200 w-full">
+                        <a href="#" class="nav-link">
                             <div class="w-6">
                                 <i class="fas fa-sun"></i>
                             </div>
@@ -77,8 +77,7 @@
                                 Settings
                             </div>
                         </a>
-                        <a href="#"
-                            class="font-bold w-full mt-4 rounded-full text-white bg-black py-4 px-6 lg:hover:bg-gray-500 transition-all duration-200">Publish
+                        <a href="#" class="font-bold w-full mt-4 rounded-full text-white bg-black py-4 px-6 transition-all duration-200 hover:bg-gray-500">Publish
                             post</a>
                     </div>
                 </div>
@@ -88,12 +87,12 @@
             <div class="lg:col-span-2">
 
                 <!-- Sticky top -->
-                <div class="sticky top-0 bg-white pt-4 lg:pt-8 pb-2 z-20">
-                    <div class="flex items-center lg:hidden mb-4">
+                <div class="sticky top-0 bg-white pt-4 pb-2 z-20 lg:pt-8">
+                    <div class="flex items-center mb-4 lg:hidden">
                         <a href="#" class="text-3xl font-bold absolute left-1/2 transform -translate-x-1/2">Flare</a>
 
                         <!-- Hamburger button -->
-                        <button id="menu-btn" class="block hamburger mt-2 mr-2 lg:hidden focus:outline-none ml-auto">
+                        <button id="menu-btn" class="block hamburger mt-2 mr-2 ml-auto focus:outline-none lg:hidden">
                             <span class="hamburger-top"></span>
                             <span class="hamburger-middle"></span>
                             <span class="hamburger-bottom"></span>
@@ -102,7 +101,7 @@
 
                     <!-- Responsive menu -->
                     <div class="lg:hidden">
-                        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-0 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-0 font-bold bg-white left-6 right-6 drop-shadow-md sm:w-auto sm:self-center">
                             <div class="space-y-6">
                                 <a href="#" class="flex items-center space-x-2">
                                     <div class="w-6">
@@ -159,13 +158,13 @@
                     <!-- Feeds type buttons -->
                     <div class="flex items-end justify-between">
                         <div class="text-2xl font-bold hidden lg:block">Feeds</div>
-                        <div class="flex lg:space-x-2 w-full lg:w-auto justify-between">
+                        <div class="flex w-full justify-between lg:space-x-2 lg:w-auto">
                             <a href="#"
-                                class="feeds-choice text-base text-gray-500 px-2 lg:hover:bg-gray-200 lg:hover:shadow rounded-full transition-all duration-200">Recents</a>
+                                class="feeds-choice text-base text-gray-500 px-2 rounded-full transition-all duration-200 lg:hover:bg-gray-200 lg:hover:shadow">Recents</a>
                             <a href="#"
-                                class="feeds-choice text-base text-gray-500 px-2 lg:hover:bg-gray-200 lg:hover:shadow rounded-full transition-all duration-200">Friends</a>
+                                class="feeds-choice text-base text-gray-500 px-2 rounded-full transition-all duration-200 lg:hover:bg-gray-200 lg:hover:shadow">Friends</a>
                             <a href="#"
-                                class="feeds-choice text-base text-gray-500 px-2 lg:hover:bg-gray-200 lg:hover:shadow rounded-full transition-all duration-200">Popular</a>
+                                class="feeds-choice text-base text-gray-500 px-2 rounded-full transition-all duration-200 lg:hover:bg-gray-200 lg:hover:shadow">Popular</a>
                         </div>
                     </div>
                 </div>
@@ -177,17 +176,17 @@
                     <div class="w-full bg-blue-100 rounded-lg p-6 space-y-2">
                         <form>
                             <textarea id="post-area" maxlength="350"
-                                class="w-full p-1 bg-transparent focus:outline-none resize-none" rows="4"
+                                class="w-full p-1 bg-transparent resize-none focus:outline-none" rows="4"
                                 placeholder="What's up??"></textarea>
-                            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+                            <div class="flex flex-col items-start justify-between lg:flex-row lg:items-center">
                                 <div class="flex items-center space-x-8">
                                     <div>
                                         <input type="file" id="post-media" class="hidden" accept="image/*">
-                                        <i class="fas fa-image text-gray-500 cursor-pointer lg:hover:text-black transition-all duration-200"
+                                        <i class="fas fa-image text-gray-500 cursor-pointer transition-all duration-200 lg:hover:text-black"
                                             id="post-media-icon"></i>
                                     </div>
                                     <div
-                                        class="flex items-center text-gray-500 space-x-2 lg:hover:text-black transition-all duration-200">
+                                        class="flex items-center text-gray-500 space-x-2 transition-all duration-200 lg:hover:text-black">
                                         <i id="globe-icon" class="fas fa-globe"></i>
                                         <i id="users-icon" class="fas fa-users hidden"></i>
                                         <select id="visibility-select"
@@ -198,13 +197,13 @@
                                     </div>
                                     <div class="relative inline-block z-10">
                                         <i id="emoji-icon"
-                                            class="fas fa-smile text-gray-500 lg:hover:text-black transition-all duration-200 cursor:pointer"></i>
+                                            class="fas fa-smile text-gray-500 transition-all duration-200 cursor:pointer lg:hover:text-black"></i>
                                         <emoji-picker id="emoji-picker"
-                                            class="absolute left-[-250px] md:left-0 scale-75 md:scale-100 transform top-full mt-1 hidden shadow-2xl"></emoji-picker>
+                                            class="absolute left-[-250px] scale-75 transform top-full mt-1 hidden shadow-2xl md:left-0 md:scale-100"></emoji-picker>
                                     </div>
                                 </div>
                                 <button
-                                    class="self-end mt-2 lg:mt-0 rounded-full text-white bg-black py-2 px-4 lg:hover:bg-gray-500 transition-all duration-200"
+                                    class="self-end mt-2 rounded-full text-white bg-black py-2 px-4 transition-all duration-200 lg:mt-0 lg:hover:bg-gray-500"
                                     type="submit">Publish post</button>
                             </div>
                         </form>
@@ -218,7 +217,7 @@
                                     alt="Avatar">
                                 <div class="flex flex-col overflow-hidden">
                                     <a href="#" class="text-base flex space-x-1">
-                                        <div class="font-bold lg:group-hover:underline whitespace-nowrap">Troy Levine</div>
+                                        <div class="font-bold whitespace-nowrap lg:group-hover:underline">Troy Levine</div>
                                         <div class="text-gray-500">&#x2022;</div>
                                         <div class="text-gray-500 whitespace-nowrap">@someusersid</div>
                                     </a>
@@ -226,12 +225,12 @@
                                 </div>
                             </div>
                             <div class="relative inline-block z-20">
-                                <button class="more-btn flex space-x-1 border-gray-500 lg:hover:bg-gray-300 lg:hover:shadow rounded-full py-4 px-2 transition-all duration-200 group">
+                                <button class="more-btn flex space-x-1 border-gray-500 rounded-full py-4 px-2 transition-all duration-200 group lg:hover:bg-gray-300 lg:hover:shadow">
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                 </button>
-                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg font-bold space-y-2 hidden">
+                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg shadow-lg font-bold space-y-2 hidden">
                                     <a href="#" class="whitespace-nowrap lg:hover:underline">
                                         Follow @someusersid
                                     </a>
@@ -253,13 +252,13 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="flex items-center text-red-400 space-x-2 lg:hover:text-black transition-all duration-200">
+                                    class="flex items-center text-red-400 space-x-2 transition-all duration-200 lg:hover:text-black">
                                     <i class="fas fa-heart"></i>
                                     <div>536</div>
                                 </button>
                             </form>
                             <a href="#"
-                                class="flex items-center text-gray-500 space-x-2 lg:hover:text-black transition-all duration-200">
+                                class="flex items-center text-gray-500 space-x-2 transition-all duration-200 lg:hover:text-black">
                                 <i class="fas fa-comment"></i>
                                 <div>82</div>
                             </a>
@@ -274,7 +273,7 @@
                                     alt="Avatar">
                                 <div class="flex flex-col overflow-hidden">
                                     <a href="#" class="text-base flex space-x-1">
-                                        <div class="font-bold lg:group-hover:underline whitespace-nowrap">Troy Levine</div>
+                                        <div class="font-bold whitespace-nowrap lg:group-hover:underline">Troy Levine</div>
                                         <div class="text-gray-500">&#x2022;</div>
                                         <div class="text-gray-500 whitespace-nowrap">@someusersid</div>
                                     </a>
@@ -282,12 +281,12 @@
                                 </div>
                             </div>
                             <div class="relative inline-block z-20">
-                                <button class="more-btn flex space-x-1 border-gray-500 lg:hover:bg-gray-300 lg:hover:shadow rounded-full py-4 px-2 transition-all duration-200 group">
+                                <button class="more-btn flex space-x-1 border-gray-500 rounded-full py-4 px-2 transition-all duration-200 group lg:hover:bg-gray-300 lg:hover:shadow">
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                 </button>
-                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg font-bold space-y-2 hidden">
+                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg shadow-lg font-bold space-y-2 hidden">
                                     <a href="#" class="whitespace-nowrap lg:hover:underline">
                                         Follow @someusersid
                                     </a>
@@ -309,13 +308,13 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="flex items-center text-red-400 space-x-2 lg:hover:text-black transition-all duration-200">
+                                    class="flex items-center text-red-400 space-x-2 transition-all duration-200 lg:hover:text-black">
                                     <i class="fas fa-heart"></i>
                                     <div>536</div>
                                 </button>
                             </form>
                             <a href="#"
-                                class="flex items-center text-gray-500 space-x-2 lg:hover:text-black transition-all duration-200">
+                                class="flex items-center text-gray-500 space-x-2 transition-all duration-200 lg:hover:text-black">
                                 <i class="fas fa-comment"></i>
                                 <div>82</div>
                             </a>
@@ -329,7 +328,7 @@
                                     alt="Avatar">
                                 <div class="flex flex-col overflow-hidden">
                                     <a href="#" class="text-base flex space-x-1">
-                                        <div class="font-bold lg:group-hover:underline whitespace-nowrap">Troy Levine</div>
+                                        <div class="font-bold whitespace-nowrap lg:group-hover:underline">Troy Levine</div>
                                         <div class="text-gray-500">&#x2022;</div>
                                         <div class="text-gray-500 whitespace-nowrap">@someusersid</div>
                                     </a>
@@ -337,12 +336,12 @@
                                 </div>
                             </div>
                             <div class="relative inline-block z-20">
-                                <button class="more-btn flex space-x-1 border-gray-500 lg:hover:bg-gray-300 lg:hover:shadow rounded-full py-4 px-2 transition-all duration-200 group">
+                                <button class="more-btn flex space-x-1 border-gray-500 rounded-full py-4 px-2 transition-all duration-200 group lg:hover:bg-gray-300 lg:hover:shadow">
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                 </button>
-                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg font-bold space-y-2 hidden">
+                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg shadow-lg font-bold space-y-2 hidden">
                                     <a href="#" class="whitespace-nowrap lg:hover:underline">
                                         Follow @someusersid
                                     </a>
@@ -364,13 +363,13 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="flex items-center text-red-400 space-x-2 lg:hover:text-black transition-all duration-200">
+                                    class="flex items-center text-red-400 space-x-2 transition-all duration-200 lg:hover:text-black">
                                     <i class="fas fa-heart"></i>
                                     <div>536</div>
                                 </button>
                             </form>
                             <a href="#"
-                                class="flex items-center text-gray-500 space-x-2 lg:hover:text-black transition-all duration-200">
+                                class="flex items-center text-gray-500 space-x-2 transition-all duration-200 lg:hover:text-black">
                                 <i class="fas fa-comment"></i>
                                 <div>82</div>
                             </a>
@@ -384,7 +383,7 @@
                                     alt="Avatar">
                                 <div class="flex flex-col overflow-hidden">
                                     <a href="#" class="text-base flex space-x-1">
-                                        <div class="font-bold lg:group-hover:underline whitespace-nowrap">Troy Levine</div>
+                                        <div class="font-bold whitespace-nowrap lg:group-hover:underline">Troy Levine</div>
                                         <div class="text-gray-500">&#x2022;</div>
                                         <div class="text-gray-500 whitespace-nowrap">@someusersid</div>
                                     </a>
@@ -392,12 +391,12 @@
                                 </div>
                             </div>
                             <div class="relative inline-block z-20">
-                                <button class="more-btn flex space-x-1 border-gray-500 lg:hover:bg-gray-300 lg:hover:shadow rounded-full py-4 px-2 transition-all duration-200 group">
+                                <button class="more-btn flex space-x-1 border-gray-500 rounded-full py-4 px-2 transition-all duration-200 group lg:hover:bg-gray-300 lg:hover:shadow">
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                     <div class="w-1 h-1 bg-gray-500 rounded-full lg:group-hover:bg-white"></div>
                                 </button>
-                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg font-bold space-y-2 hidden">
+                                <div class="more bg-white absolute flex flex-col right-0 top-full p-4 rounded-lg shadow-lg font-bold space-y-2 hidden">
                                     <a href="#" class="whitespace-nowrap lg:hover:underline">
                                         Follow @someusersid
                                     </a>
@@ -419,13 +418,13 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="flex items-center text-red-400 space-x-2 lg:hover:text-black transition-all duration-200">
+                                    class="flex items-center text-red-400 space-x-2 transition-all duration-200 lg:hover:text-black">
                                     <i class="fas fa-heart"></i>
                                     <div>536</div>
                                 </button>
                             </form>
                             <a href="#"
-                                class="flex items-center text-gray-500 space-x-2 lg:hover:text-black transition-all duration-200">
+                                class="flex items-center text-gray-500 space-x-2 transition-all duration-200 lg:hover:text-black">
                                 <i class="fas fa-comment"></i>
                                 <div>82</div>
                             </a>
@@ -436,7 +435,7 @@
             </div>
 
             <!-- Suggestions section -->
-            <div class="lg:col-span-1 hidden lg:block">
+            <div class="hidden lg:col-span-1 lg:block">
                 <div class="sticky top-0 pt-8">
                     <div class="text-2xl font-bold">Suggestions</div>
                     <div class="mt-4 space-y-2">
@@ -446,7 +445,7 @@
                                     <img class="w-12 h-12 rounded-full mb-2 object-cover object-center"
                                         src="../img/ava2.jpeg" alt="Avatar">
                                     <div class="flex flex-col">
-                                        <div class="text-base font-bold lg:group-hover:underline whitespace-nowrap">Troy
+                                        <div class="text-base font-bold whitespace-nowrap lg:group-hover:underline">Troy
                                             Levine</div>
                                         <div class="text-base text-gray-500">@someusersid</div>
                                     </div>
@@ -454,7 +453,7 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="bg-black text-xs lg:hover:bg-gray-500 transition-all duration-200 text-white font-bold py-2 px-4 rounded-full">
+                                    class="bg-black text-xs transition-all duration-200 text-white font-bold py-2 px-4 rounded-full lg:hover:bg-gray-500">
                                     Follow
                                 </button>
                             </form>
@@ -465,7 +464,7 @@
                                     <img class="w-12 h-12 rounded-full mb-2 object-cover object-center"
                                         src="../img/ava3.jpeg" alt="Avatar">
                                     <div class="flex flex-col">
-                                        <div class="text-base font-bold lg:group-hover:underline whitespace-nowrap">Azaan
+                                        <div class="text-base font-bold whitespace-nowrap lg:group-hover:underline">Azaan
                                             Peters</div>
                                         <div class="text-base text-gray-500">@someusersid</div>
                                     </div>
@@ -473,7 +472,7 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="bg-black text-xs lg:hover:bg-gray-500 transition-all duration-200 text-white font-bold py-2 px-4 rounded-full">
+                                    class="bg-black text-xs transition-all duration-200 text-white font-bold py-2 px-4 rounded-full lg:hover:bg-gray-500">
                                     Follow
                                 </button>
                             </form>
@@ -484,7 +483,7 @@
                                     <img class="w-12 h-12 rounded-full mb-2 object-cover object-center"
                                         src="../img/ava4.jpeg" alt="Avatar">
                                     <div class="flex flex-col">
-                                        <div class="text-base font-bold lg:group-hover:underline whitespace-nowrap">Joanna
+                                        <div class="text-base font-bold whitespace-nowrap lg:group-hover:underline">Joanna
                                             Mccullough</div>
                                         <div class="text-base text-gray-500">@someusersid</div>
                                     </div>
@@ -492,7 +491,7 @@
                             </div>
                             <form>
                                 <button type="submit"
-                                    class="bg-black text-xs lg:hover:bg-gray-500 transition-all duration-200 text-white font-bold py-2 px-4 rounded-full">
+                                    class="bg-black text-xs transition-all duration-200 text-white font-bold py-2 px-4 rounded-full lg:hover:bg-gray-500">
                                     Follow
                                 </button>
                             </form>
@@ -502,7 +501,7 @@
                     <!-- See all button -->
                     <form>
                         <button type="submit"
-                            class="text-base text-gray-500 px-2 lg:hover:bg-gray-200 lg:hover:shadow transition-all duration-200 rounded-full">See
+                            class="text-base text-gray-500 px-2 transition-all duration-200 rounded-full lg:hover:bg-gray-200 lg:hover:shadow">See
                             All</button>
                     </form>
                 </div>
